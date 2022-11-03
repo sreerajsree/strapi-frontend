@@ -17,6 +17,7 @@ const Image = ({ image, style }) => {
       objectFit="contain"
       src={getStrapiMedia(image)}
       alt={alternativeText || ""}
+      className="rounded-lg"
     />
   )
 }
