@@ -3,6 +3,7 @@ import Moment from "react-moment"
 import { fetchAPI } from "../../lib/api"
 import Layout from "../../components/layout"
 import NextImage from "../../components/image"
+import Image from "next/image"
 import Seo from "../../components/seo"
 import { getStrapiMedia } from "../../lib/media"
 
@@ -19,15 +20,8 @@ const Article = ({ article, categories }) => {
   return (
     <Layout categories={categories.data}>
       <Seo seo={seo} />
-      <div
-        id="banner"
-        className="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-padding uk-margin"
-        data-src={imageUrl}
-        data-srcset={imageUrl}
-        data-uk-img
-      >
-        <h1>{article.attributes.title}</h1>
-      </div>
+      <Image src={imageUrl} width={1980} height={720} />
+      <h1>{article.attributes.title}</h1>
       <div className="uk-section">
         <div className="uk-container uk-container-small">
           <ReactMarkdown
