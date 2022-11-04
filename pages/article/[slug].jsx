@@ -20,7 +20,7 @@ const Article = ({ article, categories }) => {
   return (
     <Layout categories={categories.data}>
       <Seo seo={seo} />
-      <Image src={imageUrl} width={1980} height={720} />
+      <Image src={imageUrl} width={1980} height={720} layout="responsive" />
       <h1>{article.attributes.title}</h1>
       <div className="uk-section">
         <div className="uk-container uk-container-small">

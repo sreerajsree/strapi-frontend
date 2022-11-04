@@ -13,54 +13,54 @@ import { HiBars3BottomRight } from "react-icons/hi2";
 import { TickerTape } from "react-ts-tradingview-widgets";
 const TickerSymbols = [
   {
-    "proName": "NASDAQ:AAPL",
-    "title": "APPLE"
+    proName: "NASDAQ:AAPL",
+    title: "APPLE",
   },
   {
-    "proName": "NASDAQ:META",
-    "title": "META"
+    proName: "NASDAQ:META",
+    title: "META",
   },
   {
-    "proName": "NASDAQ:TSLA",
-    "title": "TESLA"
+    proName: "NASDAQ:TSLA",
+    title: "TESLA",
   },
   {
-    "proName": "NASDAQ:AMZN",
-    "title": "AMAZON"
+    proName: "NASDAQ:AMZN",
+    title: "AMAZON",
   },
   {
-    "proName": "NASDAQ:GOOGL",
-    "title": "GOOGLE"
+    proName: "NASDAQ:GOOGL",
+    title: "GOOGLE",
   },
   {
-    "proName": "NASDAQ:MSFT",
-    "title": "MICROSOFT"
+    proName: "NASDAQ:MSFT",
+    title: "MICROSOFT",
   },
   {
-    "proName": "NASDAQ:AMD",
-    "title": "AMD"
+    proName: "NASDAQ:AMD",
+    title: "AMD",
   },
   {
-    "proName": "NASDAQ:NVDA",
-    "title": "NVIDIA"
+    proName: "NASDAQ:NVDA",
+    title: "NVIDIA",
   },
   {
-    "proName": "NASDAQ:NFLX",
-    "title": "NETFLIX"
+    proName: "NASDAQ:NFLX",
+    title: "NETFLIX",
   },
   {
-    "proName": "NYSE:IBM",
-    "title": "IBM"
+    proName: "NYSE:IBM",
+    title: "IBM",
   },
   {
-    "proName": "NASDAQ:INTC",
-    "title": "INTEL"
+    proName: "NASDAQ:INTC",
+    title: "INTEL",
   },
   {
-    "proName": "NYSE:CRM",
-    "title": "SALESFORCE"
-  }
-]
+    proName: "NYSE:CRM",
+    title: "SALESFORCE",
+  },
+];
 
 const Nav = ({ categories }) => {
   const [open, setOpen] = useState(false);
@@ -68,9 +68,9 @@ const Nav = ({ categories }) => {
   const onCloseModal = () => setOpen(false);
   return (
     <>
-    <div className="h-12 overflow-hidden">
-    <TickerTape colorTheme="light" symbols={TickerSymbols}></TickerTape>
-    </div>
+      <div className="h-12 overflow-hidden">
+        <TickerTape colorTheme="light" symbols={TickerSymbols}></TickerTape>
+      </div>
       <nav className="max-w-[70%] mx-auto flex items-center justify-between p-5">
         <div className="flex items-center">
           <button onClick={onOpenModal}>
