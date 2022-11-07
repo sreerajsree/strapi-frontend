@@ -77,21 +77,17 @@ const Nav = ({ categories }) => {
             <HiBars3BottomRight className="w-12 h-12" />
           </button>
           <Link href="/">
-            <img src="/logo.png" alt="Logo" className="w-24 h-24" />
+            <img src="/logo.png" alt="Logo" className="w-40" />
           </Link>
-          <div className="font-mono font-semibold">
-            <h2>The</h2>
-            <h2>Technophile</h2>
-          </div>
         </div>
         <div>
           <ul className="inline-flex p-3">
             {categories.map((category) => {
               return (
-                <li key={category.id} className="hover:text-green-400">
+                <li key={category.id}>
                   <Link
                     href={`/category/${category.attributes.slug}`}
-                    className="mx-2 uppercase font-semibold"
+                    className="mx-2 uppercase font-semibold hover:text-green-400"
                   >
                     {category.attributes.name}
                   </Link>
