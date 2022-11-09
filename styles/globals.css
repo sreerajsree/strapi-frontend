@@ -3,106 +3,31 @@
 @tailwind utilities;
 
 body {
-    font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 .family-bold {
-    font-family: 'Staatliches', cursive;
+  font-family: "Staatliches", cursive;
 }
 
 .family-mono {
-    font-family: 'DM Mono', monospace;
+  font-family: "DM Mono", monospace;
 }
 .family-playfair {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 .react-responsive-modal-modal {
-    max-width: 100% !important;
-    padding: 0px !important;
-    border-radius: 10px;
+  max-width: 100% !important;
+  padding: 0px !important;
+  border-radius: 10px;
 }
-.bg-button-class {
-    @apply md:hidden w-10 h-10;
-  }
 
-  .section {
-    @apply relative flex flex-col items-center min-h-[400px] pt-80 pb-20;
-  }
-
-  .curve {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-  }
-
-  .curve svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 100px;
-  }
-
-  .curve .shape-fill {
-    @apply fill-green-400;
-  }
-  .wave {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-  }
-
-  .wave svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 143px;
-  }
-
-  .wave .shape-fill {
-    @apply fill-white;
-  }
-
-  .wave2 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-  }
-
-  .wave2 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 249px;
-    transform: rotateY(180deg);
-  }
-
-  .wave2 .shape-fill {
-    @apply fill-green-500;
-  }
-
-  .spacer {
-    aspect-ratio: 960/300;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    z-index: 5;
-  }
-
-  .layer1 {
-    background-image: url("/layered-waves4.svg");
-  }
-  .layer2 {
-    background-image: url("/wave-haikei.svg");
-  }
+.section {
+  @apply relative flex flex-col items-center min-h-[400px] pt-14 md:pt-32 pb-14 md:pb-32;
+}
+.text-overflow {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -6,7 +6,7 @@ const CardFull2 = ({ article, index }) => {
   console.log(article);
   return (
     <Link href={`/article/${article.attributes.slug}`}>
-      <div className="group w-[80%]">
+      <div className="group w-full md:w-[80%]">
         <div className="relative flex items-baseline">
           <div className="w-6 h-6 mr-3 text-sm items-center text-center justify-center flex rounded-full text-[#FCF6F5FF] bg-[#101820FF]">
             {index}

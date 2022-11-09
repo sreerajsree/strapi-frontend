@@ -1,7 +1,7 @@
 import { getStrapiMedia } from "../lib/media"
 import NextImage from "next/image"
 
-const Image = ({ image, style }) => {
+const Image = ({ image, className }) => {
   const { url, alternativeText, width, height } = image.data.attributes
 
   // const loader = () => {
@@ -15,7 +15,7 @@ const Image = ({ image, style }) => {
       height={height || "100%"}
       src={getStrapiMedia(image)}
       alt={alternativeText || ""}
-      className="rounded-lg"
+      className={className}
     />
   )
 }
