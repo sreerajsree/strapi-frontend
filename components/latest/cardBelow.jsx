@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import NextImage from "./image";
+import NextImage from "../image";
 import Moment from "react-moment";
 
 const CardBelow = ({ article }) => {

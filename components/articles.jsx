@@ -1,11 +1,11 @@
 import React from "react";
 import Card from "./hero/card";
 import CardSide from "./hero/cardSide";
-import CardBelow from "./cardBelow";
-import CardBelow2 from "./cardBelow2";
-import CardFull from "./cardFull";
-import CardFull2 from "./cardFull2";
-import CardInfo from "./cardInfo";
+import CardBelow from "./latest/cardBelow";
+import CardBelow2 from "./tech/cardBelow2";
+import CardFull from "./latest/cardFull";
+import CardFull2 from "./tech/cardFull2";
+import CardInfo from "./tech/cardInfo";
 
 const Articles = ({ articles }) => {
   const latestArticle = articles.slice(-1);
@@ -72,10 +72,10 @@ const Articles = ({ articles }) => {
             </div>
             <div className="relative">
               <div className="sticky top-0">
-                <h2 className="font-bold text-8xl absolute text-[#2BAE66FF] opacity-40 right-0">
+                <h2 className="font-bold text-8xl absolute text-[#2BAE66FF] opacity-40 right-20">
                   Trending
                 </h2>
-                <div className="bg-[#FCF6F5FF] rounded-lg">
+                <div className="bg-[#FCF6F5FF] rounded-lg max-w-xl mx-auto">
                   <ul className="p-12">
                     <li>
                       {trendingData.map((article, i) => {
@@ -146,10 +146,10 @@ const Articles = ({ articles }) => {
             </div>
             <div className="relative p-5">
               <div className="sticky top-0">
-                <h2 className="font-bold text-8xl absolute text-[#101820FF] opacity-40 right-0">
+                <h2 className="font-bold text-8xl absolute text-[#101820FF] opacity-40 right-16">
                   Popular
                 </h2>
-                <div className="bg-[#FEE715FF] rounded-lg">
+                <div className="bg-[#FEE715FF] rounded-lg max-w-xl mx-auto">
                   <ul className="p-12">
                     <li>
                       {techPopular.map((article, i) => {
