@@ -27,7 +27,7 @@ const Articles = ({ articles }) => {
   const techPopular = TechPopular.slice(-5).reverse();
   return (
     <div>
-      <div className="grid grid-cols-3 gap-4 max-w-[70%] mx-auto">
+      <div className="grid-col-1 md:grid grid-cols-3 gap-4 w-full md:max-w-[70%] mx-auto">
         <div className="col-span-2">
           {latestArticle.map((article, i) => {
             return (
@@ -38,7 +38,7 @@ const Articles = ({ articles }) => {
             );
           })}
         </div>
-        <div className="p-10">
+        <div className="p-5 md:p-10">
           {leftArticles.map((article, i) => {
             return (
               <CardSide

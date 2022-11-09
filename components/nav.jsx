@@ -68,10 +68,10 @@ const Nav = ({ categories }) => {
   const onCloseModal = () => setOpen(false);
   return (
     <>
-      <div className="h-12 overflow-hidden">
+      <div className="h-[70px] md:h-12 overflow-hidden">
         <TickerTape colorTheme="light" symbols={TickerSymbols}></TickerTape>
       </div>
-      <nav className="max-w-[70%] mx-auto flex items-center justify-between p-5">
+      <nav className="hidden md:flex max-w-[70%] mx-auto items-center justify-between p-5">
         <div className="flex items-center">
           <button onClick={onOpenModal}>
             <HiBars3BottomRight className="w-12 h-12" />
