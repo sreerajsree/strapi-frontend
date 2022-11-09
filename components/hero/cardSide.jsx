@@ -9,7 +9,7 @@ const CardSide = ({ article }) => {
       <div className="pb-10">
         <div className="relative">
           <div className="w-full h-full">
-            <NextImage image={article.attributes.image} />
+            <NextImage image={article.attributes.image} className="rounded-lg object-cover" />
           </div>
           <div className="w-full family-bold group">
             <p id="category" className="teext-sm md:text-base -rotate-90 tracking-widest absolute top-10 uppercase text-white underline underline-offset-[5px] decoration-2 decoration-green-400">

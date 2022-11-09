@@ -31,3 +31,7 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.react-responsive-modal-container {
+  overflow-x: none;
+  overflow-y: none;
+}

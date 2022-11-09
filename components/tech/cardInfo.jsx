@@ -8,7 +8,7 @@ const CardInfo = ({ article }) => {
       <div className="pb-10">
         <div>
           <div className="w-full h-full">
-            <NextImage image={article.attributes.image} />
+            <NextImage image={article.attributes.image} className="rounded-lg" />
           </div>
           <div className="w-full group flex items-center justify-between">
             <div

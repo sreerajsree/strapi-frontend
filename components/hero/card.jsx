@@ -10,7 +10,7 @@ const Card = ({ article }) => {
         <div className="relative">
           <div className="absolute w-full h-full bg-gradient-to-t from-black/60 rounded-lg"></div>
           <div className="w-full h-full">
-            <NextImage image={article.attributes.image} />
+            <NextImage image={article.attributes.image} className="rounded-lg" />
           </div>
           <div className="w-full family-bold group">
             <p id="category" className="text-lg -rotate-90 tracking-widest absolute top-10 uppercase text-white underline underline-offset-[5px] decoration-2 decoration-green-400">
@@ -25,7 +25,7 @@ const Card = ({ article }) => {
       <div className="p-5 block md:hidden">
         <div className="relative">
           <div className="w-full h-full">
-            <NextImage image={article.attributes.image} />
+            <NextImage image={article.attributes.image} className="rounded-lg object-cover" />
           </div>
           <div className="w-full family-bold group">
             <p id="category" className="text-sm -rotate-90 tracking-widest absolute top-10 uppercase text-white underline underline-offset-[5px] decoration-2 decoration-green-400">

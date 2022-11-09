@@ -115,7 +115,7 @@ const Nav = ({ categories }) => {
         </div>
         <Modal open={open} onClose={onCloseModal} center>
           <div className="p-20 bg-green-100">
-            <ul className="flex flex-col family-bold text-6xl w-[800px]">
+            <ul className="flex flex-col family-bold text-4xl md:text-6xl md:w-[800px] w-[200px]">
               {categories.map((category) => {
                 return (
                   <li key={category.id} className="hover:text-green-400 mb-6">
@@ -131,6 +131,16 @@ const Nav = ({ categories }) => {
             </ul>
           </div>
         </Modal>
+      </nav>
+      <nav className="p-5 block md:hidden">
+        <div className="flex items-center">
+          <button onClick={onOpenModal}>
+            <HiBars3BottomRight className="w-10 h-10" />
+          </button>
+          <Link href="/">
+            <img src="/logo.png" alt="Logo" className="w-36" />
+          </Link>
+        </div>
       </nav>
     </>
   );
