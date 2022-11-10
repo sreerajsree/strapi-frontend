@@ -19,7 +19,7 @@ const CardBelow = ({ article }) => {
           </span>
         </div>
         <div className="object-cover w-full md:w-1/3 mx-auto">
-          <NextImage image={article.attributes.image} className="rounded-lg w-full h-[100px] md:h-[180px] object-cover" />
+          <NextImage image={article.attributes.image} className="rounded-lg w-full h-[100px] md:h-[150px] object-cover" />
         </div>
       </div>
     </Link>
